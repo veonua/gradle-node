@@ -60,8 +60,8 @@ RUN set -o errexit -o nounset \
 
 # Create Gradle volume
 USER node
-VOLUME "/home/gradle/.gradle"
-WORKDIR /home/gradle
+VOLUME "/home/node/.gradle"
+WORKDIR /home/node
 
 RUN set -o errexit -o nounset \
 	&& echo "Testing Gradle installation" \
