@@ -42,7 +42,7 @@ RUN set -o errexit -o nounset \
 
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 6.11.0
+ENV NODE_VERSION v8.10.0
 
 RUN addgroup -g 1001 node \
     && adduser -u 1001 -G node -s /bin/sh -D node \
